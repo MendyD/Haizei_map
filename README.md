@@ -1,12 +1,11 @@
 # Haizei_map
-a project about map
-
 
 maps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order.
 
-They can do the insert, delete, alter, search and traverse， they are the low level things maps can do. 
-merge , to find the place, upperbound, lowbound, they are the high level things maps can do.
+This is a c++ map project.We use the binarysearchtree to package some class which acting as a map.
 
-
-1.
-
+functiong :
+    1. struct : node, key, lchild, rchild, father
+    2. relation : predecessor, successor
+    3. operation : insert, erase, find
+    4. ...
