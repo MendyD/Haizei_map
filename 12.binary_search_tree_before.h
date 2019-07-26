@@ -21,7 +21,7 @@ struct TreeNode {
     value(value),
     lchild(nullptr),
     rchild(nullptr),
-    parents(parents) {}//构造函数
+    parents(parents) {}//构造函数//初始化列表
     TreeNode * &plchild() { return this->parents->lchild; }
     TreeNode * &prchild() { return this->parents->rchild; }
     TreeNode *lchild, *rchild, *parents;

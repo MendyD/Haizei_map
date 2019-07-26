@@ -1,11 +1,9 @@
-# Haizei_map
+#notes_for_tech 
+it is a project of Haizei School-HanFei.
+realize a toy of map.bst and hashtable
 
-maps are associative containers that store elements formed by a combination of a key value and a mapped value, following a specific order.
+#mybst
+it is a project.using a bstree to realize a toy of map.
 
-This is a c++ map project.We use the binarysearchtree to package some class which acting as a map.
-
-functiong :
-    1. struct : node, key, lchild, rchild, father
-    2. relation : predecessor, successor
-    3. operation : insert, erase, find
-    4. ...
+#12.*
+there are some demos from Haizei School - AOAHug

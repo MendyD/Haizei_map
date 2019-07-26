@@ -3,7 +3,7 @@
 	> Course: 
 	> Author: Mendy 
 	> Mail: dolai_c@163.com
-	> Created Time: 三  7/24 19:07:46 2019
+	> Created Time: 四  7/25 13:51:30 2019
  ************************************************************************/
 
 #include <iostream>
@@ -13,13 +13,31 @@
 #include <algorithm>
 #include <map>
 #include <cmath>
-using namespace std;
-struct node {
-    int64_t a;
-    bool b;
+class Date
+{
+public:
+	Date()
+	{}
+
+	Date(int year, int month, int day)
+		:_year(year)
+		,_month(month)
+		,_day(day)
+	{
+	}
+
+private:
+	int _year;
+	int _month;
+	int _day;
 };
 
-int main(){
-    printf("%d\n", (int)sizeof(node));
-    return 0;
+int main()
+{
+	Date d1;
+	Date d2(2018, 11, 30);
+	
+	system("pause");
+	return 0;
 }
+

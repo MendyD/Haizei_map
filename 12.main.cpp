@@ -16,6 +16,9 @@
 #include "12.binary_search_tree.h"
 using namespace std;
 using ArrayInt = haizei::BinarySearchTree<int>;
+struct A {
+    
+};
 int main(){
     srand(time(0));
     ArrayInt arr;

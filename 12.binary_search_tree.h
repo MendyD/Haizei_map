@@ -15,9 +15,9 @@ struct BaseNode {
     BaseNode(BaseNode *parents = nullptr) :
         lchild(nullptr),
         rchild(nullptr),
-        parents(parents) {}
-    BaseNode *&plchild() {return this->parents->lchild};
-    BaseNode *&prchild() {return this->parents->rchild};
+        parents(parents) {}//初始化列表
+    BaseNode *&plchild() {return this->parents->lchild;}
+    BaseNode *&prchild() {return this->parents->rchild;}
     BaseNode *lchild, *rchild, *parents;
     virtual ~BaseNode(){}
 };
@@ -25,8 +25,8 @@ struct BaseNode {
 template <typename VALUE_T>
 struct TreeNode : BaseNode{
     TreeNode(VALUE_T value, TreeNode *parents = nullptr) :
-        BaseNode(parenets)
-        value(value){}
+        BaseNode(parentes),
+        value(value){}//初始化列表
     VALUE_T value;
 };
 
@@ -35,7 +35,7 @@ class BinarySearchTreeIteratorImpl {
 public :
     using pTreeNode = TreeNode<VALUE_T> *;
     using Self = BinarySearchTreeIteratorImpl;
-    BinarySearchTreeIteratorImpl(BaseNode * obj) : obj(obj) {}
+    BinarySearchTreeIteratorImpl(BaseNode * obj) : obj(obj) {}//初始化列表
     VALUE_T &operator *();
     Self &operator++();
     Self operator++(int);
